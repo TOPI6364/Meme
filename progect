@@ -1,0 +1,12 @@
+import random
+import time
+symbols = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+number = int(input("какую длину пароля вы хотите?"))
+answ = ""
+
+for i in range(number):
+    answ += random.choice(symbols)
+
+print("Пароль генерируется...")
+time.sleep(3)
+print(answ)
